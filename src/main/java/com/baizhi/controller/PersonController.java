@@ -22,6 +22,8 @@ public class PersonController {
     public List<Person> showAll(HttpSession httpSession) {
         List<Person> list = personMapper.selectAll();
         httpSession.setAttribute("list", list);
+
+
         return list;
     }
 
