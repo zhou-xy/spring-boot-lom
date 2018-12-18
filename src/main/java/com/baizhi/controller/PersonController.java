@@ -31,8 +31,6 @@ public class PersonController {
     public String insertPerson(Person person) {
         System.out.println("------>" + person);
         personMapper.insertSelective(person);
-
         return "redirect:/per/showAll";
     }
-
 }
